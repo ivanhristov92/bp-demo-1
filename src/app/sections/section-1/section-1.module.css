@@ -1,0 +1,17 @@
+.section-one {
+  width: 300px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  border: 1px solid black;
+  width: 100%;
+
+  padding: 40px;
+}
+
+.section-one__image {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}

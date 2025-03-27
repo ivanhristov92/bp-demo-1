@@ -1,0 +1,13 @@
+.combined-page {
+}
+
+.combined-page__title {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.section-info {
+  text-align: center;
+  padding: 40px;
+}
