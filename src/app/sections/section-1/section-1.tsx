@@ -1,38 +1,38 @@
+import Image from "next/image";
 import styles from "./section-1.module.css";
 
 export const SectionOne = () => {
   return (
-    <section className={`${styles["section-one"]}`}>
-      <p>This is a sample section.</p>
+    //  <meta charset="UTF-8">
+    //  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    //  <title>Plumber Service</title>
+    //  <link rel="stylesheet" href="styles.css">
 
-      <br />
-
-      <p>
-        Replace the code in <b>/src/app/sections/section-1</b> to add your own
-        React or CSS code
-      </p>
-
-      <br />
-      <div>
-        <span>Sample image</span>
-
-        <br />
-
-        <p>
-          You can see a sample image bellow. To add your images to this section,
-          go to <b>/public/assets/section-1</b> and copy all the image files you
-          need there.
+    <div className={`${styles["container"]}`}>
+      <div className={`${styles["text-content"]}`}>
+        <h1 className={`${styles["header-text"]}`}>BOOK A LOCAL PLUMBER</h1>
+        <h2 className={`${styles["sub-header-text"]}`}>
+          Book a plumber to installing bathrooms appliances.
+        </h2>
+        <p className={`${styles["service-description"]}`}>
+          Our fully qualified plumbers operate throughout London, attending
+          plumbing emergencies, conducting plumbing repairs, and installing
+          bathrooms and appliances.
         </p>
-
-        <br />
-
-        <br />
-        <img
-          src="assets/section-1/globe.svg"
-          alt=""
-          className={styles["section-one__image"]}
+        <a className={`${styles["book-button"]}`}>
+          Book a Local Plumber <span className="arrow">→</span>
+        </a>
+      </div>
+      <div className={`${styles["image-container"]}`}>
+        {/* <img src="assets/banner_0.png" alt="Plumber installing bathroom appliance" className={`${styles["banner-image"]}`}> */}
+        <Image
+          src="/assets/section-1/banner_0.png"
+          alt="Plumber installing bathroom appliance"
+          className={`${styles["banner-image"]}`}
+          width={640}
+          height={460}
         />
       </div>
-    </section>
+    </div>
   );
 };
