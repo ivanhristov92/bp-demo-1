@@ -6,7 +6,7 @@ export default function Page() {
       defaultComparisonImage={
         "https://ihac-academy-assets.s3.us-east-1.amazonaws.com/ihac-academy-demo-1/Group+13.png"
       }
-      defaultHostedWebsiteUrl={"http://localhost:3000"}
+      defaultHostedWebsiteUrl={"http://localhost:8080"}
     />
   );
 }

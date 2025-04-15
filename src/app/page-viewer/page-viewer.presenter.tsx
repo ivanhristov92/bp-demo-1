@@ -18,8 +18,9 @@ export const PageViewerPresenter = ({
   return (
     <>
       <div>
-        <label htmlFor="">Comparison image url</label>
+        <label htmlFor="">Comparison image url</label>{" "}
         <input
+          defaultValue={comparisonImageUrl}
           type="text"
           onChange={(e) => {
             setComparisonImageUrl(e.target.value);
@@ -27,9 +28,10 @@ export const PageViewerPresenter = ({
         />
       </div>
       <div>
-        <label htmlFor="">Website url</label>
+        <label htmlFor="">Website url</label>{" "}
         <input
           type="text"
+          defaultValue={hostedWebsiteUrl}
           onChange={(e) => {
             setHostedWebsiteUrl(e.target.value);
           }}
