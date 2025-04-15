@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.container{
+  max-width: 1340px;
+  margin: 0 auto;
+}
+.header-sec{
+  background-color: #000;
+}
+
+.navbar-sec{
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+.navbarSec__left{
+  flex: 0 0 70%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0 38px;
+}
+
+.logo h1{
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 900;
+}
+
+.navbarSec__inner nav ul{
+  display: flex;
+}
+
+.navbarSec__inner nav ul li{
+  margin: 0 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.navbarSec__right{
+  flex: 1 0 22%;
+}
+
+.navbarSec__button-phone{
+  line-height: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding: 14px 34px;
+  cursor: pointer;
+}
+.navbarSec__button-booking{
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  line-height: 100%;
+  background-color: #C7F860;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 14px 16px;
+}
