@@ -89,7 +89,7 @@ export const SectionThree = () => {
                 
               </button>
               <button
-                className={`${styles["header-description-booking"]} ${styles["header-description-booking--secondary"]}`}
+                className={`${styles["header-description-booking"]} ${styles["header-description-booking--secondary"]}  ${styles['d-flex']} ${styles['align-items-center']} ${styles['justify-content-center']}`}
               >
                 Request Booking
               <Image src={PhoneIconBtn} alt="Logo" width={16} height={16} />
