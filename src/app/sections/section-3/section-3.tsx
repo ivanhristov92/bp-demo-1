@@ -17,8 +17,8 @@ export const SectionThree = () => {
   return (
     <section className={`${styles["header-sec"]}`}>
       <div className={`${styles.container}`}>
-        <div className={styles["navbar-sec"]}>
-          <div className={styles["navbarSec__left"]}>
+        <div className={`${styles["navbar-sec"]} ${styles['d-flex']} ${styles['align-items-center']}`}>
+          <div className={`${styles["navbarSec__left"]} ${styles['d-flex']} ${styles['align-items-center']}`}>
             <div className={styles.logo}>
               <Link href="#">
               <Image src={BusinessLogo} alt="Business Logo" width={270} height={48} />
@@ -26,7 +26,7 @@ export const SectionThree = () => {
             </div>
             <div className={styles.navbarSec__inner}>
               <nav>
-                <ul>
+                <ul className={`${styles['d-flex']}`}>
                   <li>
                    <Link href="#" className="link--active">Home</Link>
                   </li>
@@ -46,9 +46,9 @@ export const SectionThree = () => {
               </nav>
             </div>
           </div>
-          <div className={styles["navbarSec__right"]}>
-            <div className={styles["navbarSec__actions"]}>
-              <button className={styles["navbarSec__button-phone"]}>
+          <div className={`${styles["navbarSec__right"]} ${styles['d-flex']}`}>
+            <div className={`${styles["navbarSec__actions"]} ${styles['d-flex']}`}>
+              <button className={`${styles["navbarSec__button-phone"]} ${styles['d-flex']}`}>
               <Image src={PhoneIcon} alt="Logo" width={24} height={24} />
                 020 4527 6468
               </button>
@@ -60,9 +60,9 @@ export const SectionThree = () => {
         </div>
         {/* Ending the navbar sec */}
         <div  className={styles["header-description"]}>
-          <div  className={styles["header-description__inner"]}>
+          <div  className={`${styles["header-description__inner"]} ${styles['d-flex']} ${styles['align-items-center']} ${styles['justify-content-center']} `}>
             <h6>Excellent</h6>
-            <div  className={styles["header-description__stars"]}>
+            <div  className={`${styles["header-description__stars"]} ${styles['d-flex']} ${styles['align-items-center']} ${styles['justify-content-center']}`}>
               <Image src={logoPath} alt="Logo" width={30} height={30} />
               <Image src={logoPath} alt="Logo" width={30} height={30} />
               <Image src={logoPath} alt="Logo" width={30} height={30} />
@@ -70,7 +70,7 @@ export const SectionThree = () => {
               <Image src={logoPath} alt="Logo" width={30} height={30} />
             </div>
             <p  className={styles["header-description__reviews"]}>235 reviews on</p>
-            <div  className={styles["header-description__rating"]}>
+            <div  className={`${styles["header-description__rating"]} ${styles['d-flex']} ${styles['align-items-center']} `}>
             <Image src={ratingPath} alt="Logo" width={23} height={23} /> <p>Trustpilot</p>
             </div>
           </div>
@@ -80,9 +80,9 @@ export const SectionThree = () => {
               We have been offering plumbing as our core service in London, and
               our local registered and trusted professional plumbers.
             </p>
-            <div  className={styles["header-description__actions"]}>
+            <div  className={`${styles["header-description__actions"]} ${styles['d-flex']} ${styles['align-items-center']} ${styles['justify-content-center']}`}>
               <button
-                className={`${styles["header-description-booking"]} ${styles["header-description-booking--primary"]}`}
+                className={`${styles["header-description-booking"]} ${styles["header-description-booking--primary"]} ${styles['d-flex']} ${styles['align-items-center']} ${styles['justify-content-center']}`}
               >
                 Request Booking
               <Image src={ArrowIcon} alt="Logo" width={18} height={18} />
