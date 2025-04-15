@@ -1,9 +1,16 @@
+
+'use client';
+
 import Image from "next/image";
 import styles from "./section-3.module.css";
 import Link from "next/link";
 const logoPath = "/assets/section-3/star.png";
 const ratingPath = "/assets/section-3/rating.png";
 const PhoneIcon = "/assets/section-3/phone-icon.png";
+const BusinessLogo = "/assets/section-3/business-logo.png";
+const ArrowIcon = "/assets/section-3/arrow-icon.png";
+const PhoneIconBtn = "/assets/section-3/phone-icon-btn.png";
+const RightShape = "/assets/section-3/banner-right-shape.png";
 
 // /assets/section-1/banner_0.png
 export const SectionThree = () => {
@@ -14,14 +21,14 @@ export const SectionThree = () => {
           <div className={styles["navbarSec__left"]}>
             <div className={styles.logo}>
               <Link href="#">
-                <h1>Business Logo</h1>
+              <Image src={BusinessLogo} alt="Business Logo" width={270} height={48} />
               </Link>
             </div>
             <div className={styles.navbarSec__inner}>
               <nav>
                 <ul>
                   <li>
-                   <Link href="#">Home</Link>
+                   <Link href="#" className="link--active">Home</Link>
                   </li>
                   <li>
                    <Link href="#">Plumbing</Link>
@@ -78,11 +85,14 @@ export const SectionThree = () => {
                 className={`${styles["header-description-booking"]} ${styles["header-description-booking--primary"]}`}
               >
                 Request Booking
+              <Image src={ArrowIcon} alt="Logo" width={18} height={18} />
+                
               </button>
               <button
                 className={`${styles["header-description-booking"]} ${styles["header-description-booking--secondary"]}`}
               >
                 Request Booking
+              <Image src={PhoneIconBtn} alt="Logo" width={16} height={16} />
               </button>
             </div>
           </div>
