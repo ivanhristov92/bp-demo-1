@@ -1,3 +1,238 @@
-h1 {
-  background-color: green;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
 }
+
+/**************************************
+    Generic Styles
+***************************************/
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/**************************************
+   Ending Generic Styles
+***************************************/
+.header-sec {
+  background-color: #000;
+  min-height: 930px;
+
+  .navbar-sec {
+    padding: 40px 0 140px 0;
+
+    .navbarSec__left {
+      flex: 0 0 68%;
+      color: #fff;
+      gap: 0 68px;
+
+      .logo {
+        max-width: 270px;
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .navbarSec__inner {
+        ul {
+          gap: 0 24px;
+          list-style: none;
+
+          li {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+
+            a {
+              text-decoration: none;
+              color: #fff;
+
+              &.link--active {
+                color: #C7F860;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* Ending the navbar left sec */
+    .navbarSec__right {
+      flex: 1;
+      justify-content: flex-end;
+
+      .navbarSec__actions {
+        gap: 0 8px;
+
+        .navbarSec__button-phone {
+          line-height: 100%;
+          font-size: 20px;
+          font-weight: 700;
+          color: #fff;
+          padding: 12px 17px;
+          cursor: pointer;
+          gap: 0 10px;
+          letter-spacing: -0.03rem;
+          background-color: transparent;
+          border: 0;
+        }
+
+        .navbarSec__button-booking {
+          font-size: 20px;
+          font-weight: 700;
+          color: #000;
+          line-height: 100%;
+          background-color: #C7F860;
+          border-radius: 8px;
+          cursor: pointer;
+          padding: 14px 16px;
+        }
+
+      }
+    }
+
+  }
+
+  /* Ending the navbar sec */
+
+  .header-description {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../public/assets/section-3/banner-right-shape.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      right: -21.2%;
+      top: 75px;
+      width: 947px;
+      height: 580px;
+      height: 600px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../public/assets/section-3/banner-left-shape.png);
+      background-repeat: no-repeat;
+      width: 390px;
+      height: 432px;
+      background-size: 100%;
+      left: -21.2%;
+      top: 58%;
+      bottom: auto;
+
+    }
+
+    .header-description__inner {
+      margin-bottom: 28px;
+
+      h6 {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      .header-description__stars {
+        gap: 0 6px;
+        margin: 0 16px;
+      }
+      .header-description__reviews{
+        color: #fff;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+      }
+      .header-description__rating {
+        margin-left: 16px;
+      
+        p {
+          color: #fff;
+          font-size: 20px;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    /* Ending hte header description inner sec */
+    .header-description__afterdesc {
+      text-align: center;
+      color: #fff;
+      max-width: 1060px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 72px;
+        line-height: 80px;
+        letter-spacing: -0.10rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        max-width: 690px;
+        margin: 0 auto 40px auto;
+      }
+      .header-description__actions{
+        .header-description-booking {
+          font-size: 20px;
+          line-height: 100%;
+          font-weight: 700;
+          border-radius: 8px;
+          color: #000;
+          cursor: pointer;
+          letter-spacing: -.03rem;
+          padding: 14px 20px;
+          max-width: 215px;
+          width: 100%;
+          gap: 0 4px;
+        }
+        .header-description-booking--primary {
+          background-color: #C7F860;
+          margin-right: 16px;
+        }
+        
+        .header-description-booking--secondary {
+          background-color: #FFFFFF;
+        }
+      }
+    }
+
+  }
+}
+
+
+
+
+
+
+
