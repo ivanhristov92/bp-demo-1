@@ -12,12 +12,35 @@ export const PageViewerPresenter = ({
     defaultComparisonImage
   );
   const [hostedWebsiteUrl, setHostedWebsiteUrl] = useState(
-    defaultHostedWebsiteUrl
+    defaultHostedWebsiteUrl + "?date=" + Date.now()
   );
 
   return (
     <>
       <div>
+        <ul>
+          <li>
+            <a
+              href="http://localhost:8080/"
+              target="_blank"
+              style={{ border: "1px solid black", padding: "10px 20px" }}
+            >
+              html
+            </a>
+          </li>
+        </ul>
+        <br />
+        <button
+          style={{ border: "1px solid black", padding: "10px 20px" }}
+          onClick={() => {
+            setHostedWebsiteUrl(
+              hostedWebsiteUrl.split("?")[0] + "?date=" + Date.now()
+            );
+          }}
+        >
+          refresh
+        </button>
+        <br />
         <label htmlFor="">Comparison image url</label>{" "}
         <input
           defaultValue={comparisonImageUrl}
